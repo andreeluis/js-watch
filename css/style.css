@@ -10,7 +10,7 @@
 
 body {
   background-color: #282A36;
-  color: F8F8F2;
+  color: #F8F8F2;
   font-family: 'Source Code Pro', monospace;
 }
 
@@ -46,7 +46,7 @@ ul {
 }
 
 ul a {
-  color: white;
+  color: #F8F8F2;
 }
 
 ul li {
@@ -115,4 +115,10 @@ ul li:hover {
   #hamburger-icon {
     display: block;
   }
+}
+
+.title{
+  font-size: 22pt;
+  margin: 25px 0;
+  text-align: center;
 }
