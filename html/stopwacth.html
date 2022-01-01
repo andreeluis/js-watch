@@ -18,7 +18,6 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-        
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -34,12 +33,13 @@
 
     <h1 class="title">Stopwatch</h1>
     <div id="stopwatch" class="stopwatch">
-        <div id="display-stopwatch">00:00:00</div>
+        <div id="display-stopwatch"></div>
         <ul class="nav-stopwatch">
-            <li class="icon"><svg onclick= "playpause()" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg></li>
+            <li id="playpause" class="icon"><svg onclick= "playpause()" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg></li>
             <li class="icon"><svg onclick= "lap()" viewBox="0 0 24 24"><path d="M4 24h-2v-24h2v24zm18-21.387s-1.621 1.43-3.754 1.43c-3.36 0-3.436-2.895-7.337-2.895-2.108 0-4.075.98-4.909 1.694v12.085c1.184-.819 2.979-1.681 4.923-1.681 3.684 0 4.201 2.754 7.484 2.754 2.122 0 3.593-1.359 3.593-1.359v-12.028z"/></svg></li>
             <li class="icon"><svg onclick= "finish()" viewBox="0 0 24 24"><path d="M2 2h20v20h-20z"/></svg></li>
         </ul>
+        <ol reversed id="lap"></ol>
     </div>
     <script src="../js/stopwatch.js" onload="stopwatch()"></script>
 </body>

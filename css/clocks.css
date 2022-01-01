@@ -16,7 +16,6 @@
     text-shadow: 5px -1px 0 #737996;
 }
 
-
 #stopwatch .nav-stopwatch{
     align-content: center;
 }
@@ -26,4 +25,13 @@
     fill: #F8F8F2;
     width: 40px;
     height: 40px;
+}
+
+#stopwatch #lap{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: #F8F8F2;
+    text-shadow: 1px -1px 0 #737996;
 }
