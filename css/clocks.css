@@ -12,19 +12,22 @@
     font-weight: 600;
     text-align: center;
     font-size: 7em;
-    margin-top: .4em;
+    margin-top: .3em;
     text-shadow: 5px -1px 0 #737996;
 }
 
 #stopwatch .nav-stopwatch{
     align-content: center;
+    display: flex;
+    justify-content: center;
+    
 }
 
 #stopwatch .nav-stopwatch .icon{
-    margin-top: 50px;
     fill: #F8F8F2;
     width: 40px;
     height: 40px;
+    margin: 50px 30px 0 30px;
 }
 
 #stopwatch #lap{
@@ -34,4 +37,57 @@
     font-weight: 600;
     color: #F8F8F2;
     text-shadow: 1px -1px 0 #737996;
+}
+
+#display-pomodoro{
+    color: #F8F8F2;
+    font-weight: 600;
+    text-align: center;
+    font-size: 7em;
+    margin-top: .3em;
+    text-shadow: 5px -1px 0 #737996;
+}
+
+#pomodoro .nav-pomodoro{
+    align-items: center;
+    justify-content: center;
+}
+
+#pomodoro .icon{
+    fill: #F8F8F2;
+    width: 40px;
+    height: 40px;
+    margin: 50px 30px 0 30px;
+}
+
+#pomodoro label{
+    display: block;
+}
+
+#pomodoro .time-box{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#pomodoro .time-box div{
+    margin: 0 30px 0 30px;
+    float:left;
+}
+
+#pomodoro input{
+    background-color: #6272a4;
+    width: 180px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    color: #F8F8F2;
+    text-shadow: 2px -1px 0 #282a36;
+    border-radius: 3px;
+}
+#pomodoro input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
 }

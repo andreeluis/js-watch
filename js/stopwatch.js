@@ -36,7 +36,7 @@ function finish(){
 }
 
 function stopwatch(){    
-    if (play == true){
+    if (play){
         cs++
     }
     if (cs == 100){
