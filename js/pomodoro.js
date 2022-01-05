@@ -65,15 +65,18 @@ function finish(){
         playpause()
     }
     else{
-        document.querySelector('#display-pomodoro').innerHTML = '00:00:00'
+        s = 0
+        m = 0
+        h = 0
     }
 }
 
 function pomodoro(){
-    if (play){
+    if (play && s > 0){
         s--
+        
     }
-    if(m == 0 && h>0){
+    else if(m == 0 && h>0){
         m = 59
         h--
     }
@@ -82,20 +85,16 @@ function pomodoro(){
         m--
     }
 
-    else{
-        timeover()
+    if (s == m == h == 0){
+        playpause()
     }
     document.querySelector('div#display-pomodoro').innerHTML = addZero(h) + ':' + addZero(m) + ':' + addZero(s)
     setTimeout(pomodoro, 1000)
 }
 
-function timeover(){
-    
-}
-
 
 function addZero(i) { // add zero in front of numbers < 10
-    if (i < 10) {
+    if (i < 10 || i!==00) {
       i = "0" + i
     }  
     return i
